@@ -31,5 +31,40 @@
                 </div>
             </li>
 
+            <!-- country -->
+            <li class="nav-item {{ request()->is('admin/countries') || request()->is('admin/countries') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.countries.index') }}">
+                <i class="fas fa-cogs"></i>
+                    <span>{{ __('Country') }}</span></a>
+            </li>
+
+            <!-- season -->
+            <li class="nav-item {{ request()->is('admin/seasons') || request()->is('admin/seasons') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.seasons.index') }}">
+                <i class="fas fa-cogs"></i>
+                    <span>{{ __('Season') }}</span></a>
+            </li>
+
+            <!-- team -->
+            <li class="nav-item {{ request()->is('admin/teams') || request()->is('admin/teams') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.teams.index') }}">
+                <i class="fas fa-cogs"></i>
+                    <span>{{ __('Team') }}</span></a>
+            </li>
+
+            <!-- player -->
+            <li class="nav-item {{ request()->is('admin/players') || request()->is('admin/players') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.players.index') }}">
+                <i class="fas fa-cogs"></i>
+                    <span>{{ __('Player') }}</span></a>
+            </li>
+
+            <!-- player -->
+            <li class="nav-item {{ request()->is('admin/salaries') || request()->is('admin/salaries') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('admin.salaries.index') }}">
+                <i class="fas fa-cogs"></i>
+                    <span>{{ __('Salary') }}</span></a>
+            </li>
+
 
         </ul>

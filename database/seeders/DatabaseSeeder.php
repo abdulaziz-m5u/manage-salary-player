@@ -18,5 +18,10 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeed::class);
         $this->call(UserSeedPivot::class);
         $this->call(RoleSeedPivot::class);
+        $this->call(CountrySeed::class);
+        $this->call(SeasonSeed::class);
+        $this->call(TeamSeed::class);
+        $this->call(PlayerSeed::class);
+        $this->call(SalarySeed::class);
     }
 }
